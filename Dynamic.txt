@@ -1,0 +1,9 @@
+ # So basically we are using the setinterval which is used to call the function defined inside it after time given at second parameter. 
+        var clock = setInterval(clocktiming,1000)
+       
+        function clocktiming(){
+            var d = new Date;
+	# Here we are only extracting the time from the whole Data object.
+            var time = d.toLocaleTimeString();
+	# Here we are writing that time to the paragraph with id showClock
+            document.getElementById('showClock').innerHTML = time;
