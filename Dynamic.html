@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="clearInterval(clock)">Stop Clock</button>
     <p id="showClock"></p>
     
     <script type = "text/javascript">
-        
+
         var clock = setInterval(clocktiming,1000)
         function clocktiming(){
             var d = new Date;
